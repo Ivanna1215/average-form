@@ -1,7 +1,7 @@
 import { expect, test } from "../fixtures/baseFixture.ts";
 import { registrationData, testCases, gender, hobby, time } from "../test-data/data.ts";
 
-test.describe("Your average form", () => {
+test.describe("Average Form: validation and submission tests", () => {
   test("Fill form with valid data.", async ({ formPage, page }) => {
     await test.step("Fill in username and password", async () => {
       await formPage.fillInputs(registrationData);

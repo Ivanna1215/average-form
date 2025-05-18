@@ -19,9 +19,9 @@
 This project uses [Playwright](https://playwright.dev/) for end-to-end testing.
 
 - `npx playwright test` — run all Playwright tests.
-- `npx playwright test tests/averageForm.spec.ts` — run a single test file.
-- `npx playwright test -g "Validation: show error when all fields are empty"` — run a specific test by title.
-- `npx playwright test -g "Validation" --repeat-each=3` — run tests by title and repeat 3 times.
+- `npx playwright test tests/average-form.spec.ts` — run a single test file.
+- `npx playwright test -g "Fill form with valid data"` — run a specific test by title.
+- `npx playwright test -g "Fill form with valid data" --repeat-each=3` — run tests by title and repeat 3 times.
 
 ## How to run Codegen?
 
@@ -45,11 +45,7 @@ This project uses [Playwright](https://playwright.dev/) for end-to-end testing.
 
 ```ts
 test.describe("Average Form: validation and submission tests", () => {
-  test("Validation: show error when all fields are empty", async ({ page }) => {
-    // Your test implementation here
-  });
-
-  test("Submission: successful form submission with valid data", async ({ page }) => {
+  test("Fill form with valid data.", async ({ page }) => {
     // Your test implementation here
   });
 });
