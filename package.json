@@ -1,16 +1,14 @@
 {
-  "name": "test-task-cypress",
+  "name": "test-task-playwright",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "node ./app/index.js",
-    "test": "cypress run"
+    "serve": "node ./app/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^12.17.0",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-session": "^1.17.3"
